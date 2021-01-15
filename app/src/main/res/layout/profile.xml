@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fitsSystemWindows="true"
+       android:layout_gravity="center_vertical"
+       android:gravity="center_vertical"
+       android:padding="10dp"
+       >
+
+      <!--<android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:minHeight="?attr/actionBarSize"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:titleTextColor="@android:color/white"
+          android:background="@color/green"
+          >
+-->
+      <LinearLayout
+          android:id="@+id/back_feed"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:padding="10dp"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          >
+
+         <ImageView
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_gravity="center_vertical"
+             android:src="@drawable/ic_go_back_left_arrow_"
+             android:background="?attr/selectableItemBackgroundBorderless"
+
+             />
+
+      </LinearLayout>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="PROFILE"
+          android:textSize="20dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginHorizontal="15dp"
+          android:fontFamily="@font/segoeui"
+          android:textColor="#fff"
+          android:id="@+id/lang_title" />
+
+      <!--
+                </android.support.v7.widget.Toolbar>
+      -->
+
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:weightSum="100"
+       android:orientation="vertical"
+
+       >
+      <LinearLayout
+          android:id="@+id/profile_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingHorizontal="20dp"
+          android:orientation="vertical"
+          >
+
+         <LinearLayout
+             android:id="@+id/prof_tab"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:background="@drawable/border_profile_box_filled_curve"
+             android:paddingHorizontal="10dp"
+             android:weightSum="100"
+
+             >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="20"
+                >
+
+               <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/image_acc"
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   app:civ_border_color="#fff"
+                   app:civ_border_width="1dp"
+                   android:src="@drawable/avatarmale"/>
+
+
+               <!--
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/user_home"
+                               />
+               -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="70"
+                android:layout_marginLeft="10dp"
+                >
+               <TextView
+                   android:id="@+id/user_name_menu"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="ABC"
+                   android:textSize="18dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textStyle="bold"
+                   android:textColor="#fff"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="DE ID : 1026"
+                   android:textSize="18dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textColor="#fff"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_detail_arrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+                >
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@drawable/ic_right_angle_arrow"
+                   />
+
+            </LinearLayout>
+
+
+
+         </LinearLayout>
+
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginBottom="10dp"
+             android:background="@color/grey_text_color"
+
+             />
+         <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="-10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/Earnings"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+         -->
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@drawable/language_border"
+          android:paddingVertical="15dp"
+          >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:weightSum="100"
+             android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white_text"
+                android:layout_gravity="center"
+               android:text="Your Ratings"/>
+
+            <RatingBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="63"
+                android:outlineAmbientShadowColor="@color/orange_txt"
+                android:outlineSpotShadowColor="@color/bg_green_color"
+                />
+
+            <LinearLayout
+                android:id="@+id/your_ratings_arrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="12"
+                android:gravity="center"
+                >
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@drawable/ic_right_angle_arrow"
+                   />
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+
+      </LinearLayout>
+
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/bg_black"
+          android:layout_below="@id/profile_layout"
+          >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginHorizontal="20dp"
+
+             >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical"
+                >
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/email"
+                   />
+               <TextView
+                   android:id="@+id/personaldetails"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Personal Details"
+                   android:textSize="16dp"
+                   android:layout_marginLeft="20dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textColor="#fff"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical"
+                >
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/email"
+                   />
+               <TextView
+                   android:id="@+id/bankdetails"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Personal Savings Account"
+                   android:textSize="16dp"
+                   android:layout_marginLeft="20dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textColor="#fff"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/your_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical"
+                >
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/email"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Your Address"
+                   android:textSize="16dp"
+                   android:layout_marginLeft="20dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textColor="#fff"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical"
+                >
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/email"
+                   />
+               <TextView
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Language"
+                   android:textSize="16dp"
+                   android:layout_marginLeft="20dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textColor="#fff"
+                   />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical"
+                >
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/email"
+                   />
+               <TextView
+                   android:id="@+id/issue"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Issue Details"
+                   android:textSize="16dp"
+                   android:layout_marginLeft="20dp"
+                   android:fontFamily="@font/segoeui"
+                   android:textColor="#fff"
+                   />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/seperator"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/grey_text_color"
+                />
+
+         </LinearLayout>
+
+      </ScrollView>
+   </LinearLayout>
+</LinearLayout>
